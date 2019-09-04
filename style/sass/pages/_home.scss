@@ -1,0 +1,56 @@
+.about-section {
+	background-color: $color-gray-1;
+	padding: 24rem 0rem;
+	margin-top: -20vh;
+}
+.aboute-contents {
+	display: flex;
+	width: 115rem;
+	margin: auto;
+	justify-content: space-between;
+}
+.about-heading-img {
+	display: flex;
+	width: 50%;
+}
+.featur-section {
+	background-image: linear-gradient(to right bottom, rgba($dark-color, 0.8), rgba($light-color, 0.8)), url(../../img/nat-4.jpg);
+	background-size: cover;
+	padding: 22rem 0rem;
+	margin-top: -10rem;
+	transform: skewY(-6deg);
+	& > * {
+		transform: skewY(6deg);
+	}
+}
+.section-card {
+	background-color: $color-gray-1;
+	height: 125vh;
+	padding: 15% 10% 0 10% ;
+	text-align: center;
+	margin-top: -8rem;
+}
+.story-section {
+	padding: 0 10%;
+	position: relative;
+}
+.contact {
+	background-image: linear-gradient(to right bottom, rgba($dark-color, 0.8), rgba($light-color, 0.8));
+	height: 98vh;
+	padding: 15rem;
+	margin-top: 18.5rem;
+	&__img {
+		background-image: linear-gradient(106deg, rgba($white-color, .9) 0%, rgba($white-color, .9) 50%, transparent 50%) ,url(../../img/nat-10.jpg);
+		background-size: cover;
+		border-radius: 3px;
+		height: 50rem ;
+		padding-left: 6rem;
+		box-shadow: 0 1.5rem 4rem rgba($Black-color, .15);
+	}
+}
+.footer {
+	background-color: $color-gray-4;
+	height: 70vh;
+	padding: 5% 10% 0 10%;
+	font-size: 1.4rem;
+}

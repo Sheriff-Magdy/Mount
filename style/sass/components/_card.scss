@@ -1,0 +1,262 @@
+.section-card-box {
+	display: flex;
+	justify-content: space-around;
+
+	&__card-1 {
+		width: 30%;
+		perspective: 150rem;
+		-moz-prespective: 150rem;
+		position: relative;
+		
+		&__card-1-front {
+			background-color: $white-color;
+			width: 34.6rem;
+			height: 50rem;
+			transition: all .8s ease .20s;
+			box-shadow: 0 1.5rem 4rem rgba($Black-color, .15);
+			position: absolute;
+			top: 0;
+			&__pic-1 {
+				width: 100%;
+				height: 23rem;
+				background-image: linear-gradient( to right bottom, $secondary-light-1, $secondary-light-2,), url(../../img/nat-5.jpg);
+				background-blend-mode: screen;
+				background-size: cover;
+				clip-path: polygon(0 0,100% 0, 100% 85%,0 100%);
+			}
+			&__heading-1 {
+				position: absolute;
+				top: 16rem;
+				right: 0;
+				h4 {
+					font-size: 2.8rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $white-color;
+					background-image: linear-gradient(to right bottom, rgba($secondary-light-1, .75 ), rgba($secondary-light-2, .75));
+					padding: 0 1rem;
+				}
+			}
+			&__details-1 {
+				ul {
+					list-style: none;
+					margin-top: 1.5rem;
+					li {
+						font-size: 1.5rem;
+						width: 80%;
+						margin: 0 auto;
+						padding: 1rem 0;
+						&:not(:last-child) {
+							border-bottom: 2px solid #eee;
+						}
+					}
+				}
+			}
+		}
+		&__card-1-rear {
+			height: 50rem;
+			width: 34.6rem;
+			backface-visibility: hidden;
+			transform: rotateY(-180deg);
+			transition: all .8s ease .20s;
+			box-shadow: 0 1.5rem 4rem rgba($Black-color, .15);
+			background-image: linear-gradient( to right bottom, $secondary-light-1, $secondary-light-2,);
+			&__card-section {
+				position: absolute;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%,50%);
+				&__price {
+					margin-bottom: 8rem;
+					color: $white-color;
+					&__only {
+						font-size: 1.4rem;
+						text-transform: uppercase;
+					}
+					&__value {
+						font-size: 6rem;
+						font-weight: 100;
+					}
+				}
+			}
+		}
+		&:hover &__card-1-front {
+			transform: rotateY(180deg);
+		}
+		&:hover &__card-1-rear {
+			transform: rotateY(0);
+		}
+	}
+
+	&__card-2 {
+		width: 30%;
+		perspective: 150rem;
+		position: relative;
+		-moz-prespective: 150rem;
+
+		&__card-2-front {
+			background-color: $white-color;
+			width: 34.6rem;
+			height: 50rem;
+			transition: all .8s ease .20s;
+			box-shadow: 0 1.5rem 4rem rgba($Black-color, .15);
+			position: absolute;
+			top: 0;
+			&__pic-2 {
+				width: 100%;
+				height: 23rem;
+				background-image: linear-gradient(to right bottom, $secondary-light-3, $secondary-light-4), url(../../img/nat-6.jpg);
+				background-blend-mode: screen;
+				background-size: cover;
+				clip-path: polygon(0 0,100% 0, 100% 85%,0 100%);
+			}
+			&__heading-2 {
+				position: absolute;
+				top: 16rem;
+				right: 0;
+				h4 {
+					font-size: 2.8rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $white-color;
+					background-image: linear-gradient(to right bottom, rgba($secondary-light-3, .75 ), rgba($secondary-light-4, .75));
+					padding: 0 1rem;
+				}
+			}	
+			&__details-2 {
+				ul {
+					list-style: none;
+					margin-top: 1.5rem;
+					li {
+						font-size: 1.5rem;
+						width: 80%;
+						margin: 0 auto;
+						padding: 1rem 0;
+						&:not(:last-child) {
+							border-bottom: 2px solid #eee;
+						}
+					}
+				}
+			}	
+		}
+		&__card-2-rear {
+			height: 50rem;
+			width: 34.6rem;
+			backface-visibility: hidden;
+			transform: rotateY(-180deg);
+			transition: all .8s ease .20s;
+			box-shadow: 0 1.5rem 4rem rgba($Black-color, .15);
+			background-image: linear-gradient(to right bottom, $secondary-light-3, $secondary-light-4);
+			&__card-section {
+				position: absolute;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%,50%);
+				&__price {
+					margin-bottom: 8rem;
+					color: $white-color;
+					&__only {
+						font-size: 1.4rem;
+						text-transform: uppercase;
+					}
+					&__value {
+						font-size: 6rem;
+						font-weight: 100;
+					}
+				}
+			}
+			}
+		&:hover &__card-2-front {
+			transform: rotateY(180deg);
+		}
+		&:hover &__card-2-rear {
+			transform: rotateY(0);
+		}
+	}
+
+	&__card-3 {
+		width: 30%;
+		perspective: 150rem;
+		position: relative;
+		-moz-prespective: 150rem;
+
+		&__card-3-front {
+			background-color: $white-color;
+			width: 34.6rem;
+			height: 50rem;
+			transition: all .9s ease .20s;
+			box-shadow: 0 1.5rem 4rem rgba($Black-color, .15);
+			position: absolute;
+			top: 0rem;
+			&__pic-3 {
+				width: 100%;
+				height: 23rem;
+				background-image: linear-gradient( to right bottom, $secondary-light-5, $secondary-light-6 ), url(../../img/nat-7.jpg);
+				background-blend-mode: screen;
+				background-size: cover;
+				clip-path: polygon(0 0,100% 0, 100% 85%,0 100%);
+			}
+			&__heading-3 {
+				position: absolute;
+				top: 16rem;
+				right: 0;
+				h4 {
+					font-size: 2.5rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $white-color;
+					background-image: linear-gradient(to right bottom, rgba($secondary-light-5, .75 ), rgba($secondary-light-6, .75));
+					padding: 0 1rem;
+				}
+			}	
+			&__details-3 {
+				ul {
+					list-style: none;
+					margin-top: 1.5rem;
+					li {
+						font-size: 1.5rem;
+						width: 80%;
+						margin: 0 auto;
+						padding: 1rem 0;
+						&:not(:last-child) {
+							border-bottom: 2px solid #eee;
+						}
+					}
+				}
+			}	
+		}
+		&__card-3-rear {
+			height: 50rem;
+			width: 34.6rem;
+			backface-visibility: hidden;
+			transform: rotateY(-180deg);
+			transition: all .9s ease .20s;
+			box-shadow: 0 1.5rem 4rem rgba($Black-color, .15);
+			background-image: linear-gradient( to right bottom, $secondary-light-5, $secondary-light-6 );
+			&__card-section {
+				position: absolute;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%,50%);
+				&__price {
+					margin-bottom: 8rem;
+					color: $white-color;
+					&__only {
+						font-size: 1.4rem;
+						text-transform: uppercase;
+					}
+					&__value {
+						font-size: 6rem;
+						font-weight: 100;
+					}
+				}
+			}
+		}
+		&:hover &__card-3-front {
+			transform: rotateY(180deg);
+		}
+		&:hover &__card-3-rear {
+			transform: rotateY(0);
+		}
+	}
+}
