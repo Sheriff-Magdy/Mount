@@ -6,7 +6,21 @@
 }
 html {
 	font-size: 62.5%;
+	
+	@include responsive (big-desktop) {
+		font-size: 100%;
+	}
+	@include responsive (tap-land) {
+		font-size: 80%;
+	}
+	@include responsive (tap-port) {
+		font-size: 45%;
+	}
 }
 body {
 	box-sizing: border-box;
+}
+::selection {
+	background-color: $secondary-light-2;
+	color: $color-gray-1;
 }

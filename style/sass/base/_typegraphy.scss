@@ -118,4 +118,19 @@ body {
 		text-shadow: .5rem 1rem 2rem  rgba($Black-color, .2);
 	}
 }
+.bookingHead {
+	background-image: linear-gradient(to right, $dark-color, $light-color);
+	display: inline-block;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all .2s ;
+	&:hover {
+		transform: skewX(15deg) skewY(2deg) scale(1.1);
+		text-shadow: .5rem 1rem 2rem  rgba($Black-color, .2);
+	}
+}
 

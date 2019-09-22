@@ -1,0 +1,88 @@
+.popup {
+	background-color: rgba($Black-color, .8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4000;
+	width: 100%;
+	height: 100vh;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .2s ease-in-out;
+	-wibkit-backdrop-filter: blur(10px);
+	
+	@supports(-wibkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+		-wibkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background-color: rgba($Black-color, .3);
+	}
+
+	&:target {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&:target &__contant {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+	&__close {
+		&:link,
+		&:visited {
+			position: absolute;
+			top: 2.5rem;
+			right: 2.5rem;
+			text-decoration: none;
+			font-size: 3rem;
+			color: $light-color;
+			display: inline-block;
+			transition: all .1s;
+			line-height: 1;
+		}
+		&:hover {
+			color: $color-gray-4; 
+		}
+	}
+
+	&__contant {
+		@include absCenter;
+		width: 75%;
+		height: 65%;
+		background-color: $white-color;
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 0rem 2rem 4rem rgba($Black-color, .3);
+		border-radius: 3px;
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(.5);
+		transition: all .4s .2s;
+	}
+	&__leftSide {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 33%;
+		img {
+			width: 100%;
+			height: 50%;
+		}
+	
+	}
+	&__rightSide {
+		flex-basis: 66%;
+		padding: 3rem 5rem;
+		display: table-cell;
+		font-size: 1.4rem;
+		vertical-align: middle;
+		p {
+			margin-bottom: 4rem;
+			column-count: 2;
+       		column-gap: 4rem; 
+       		column-rule: 1px solid $color-gray-4;
+       		hyphens: auto;
+		}
+		h3 {
+			margin-bottom: 2rem;
+		}
+	}
+}

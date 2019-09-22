@@ -90,6 +90,7 @@
   100% {
     opacity: 1; } }
 
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/base/_base.scss */
 * {
   padding: 0;
   margin: 0;
@@ -98,19 +99,39 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+/* line 7, Users/sherif/Portfolio/Natrous/style/sass/base/_base.scss */
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    /* line 7, Users/sherif/Portfolio/Natrous/style/sass/base/_base.scss */
+    html {
+      font-size: 100%; } }
+  @media only screen and (max-width: 56em) {
+    /* line 7, Users/sherif/Portfolio/Natrous/style/sass/base/_base.scss */
+    html {
+      font-size: 45%; } }
 
+/* line 20, Users/sherif/Portfolio/Natrous/style/sass/base/_base.scss */
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+/* line 23, Users/sherif/Portfolio/Natrous/style/sass/base/_base.scss */
+::-moz-selection {
+  background-color: #FF7730;
+  color: #F7F7F7; }
+::selection {
+  background-color: #FF7730;
+  color: #F7F7F7; }
+
+/* line 2, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777; }
 
+/* line 8, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .text-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,11 +148,13 @@ body {
           align-items: center;
   position: relative;
   top: 35%; }
+  /* line 15, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
   .text-box .heading-primary {
     color: #FFFFFF;
     text-transform: uppercase;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden; }
+    /* line 19, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
     .text-box .heading-primary .heading-min {
       display: block;
       font-size: 6rem;
@@ -139,6 +162,7 @@ body {
       letter-spacing: 3.5rem;
       -webkit-animation: 1s moveInLeft ease-in-out;
               animation: 1s moveInLeft ease-in-out; }
+    /* line 26, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
     .text-box .heading-primary .heading-sub {
       display: block;
       font-size: 2rem;
@@ -147,6 +171,7 @@ body {
       -webkit-animation: 1s moveInRight ease-in-out;
               animation: 1s moveInRight ease-in-out; }
 
+/* line 35, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .heading-secoundery {
   background-image: -webkit-gradient(linear, left top, right top, from(#6779C7), to(#39A4B4));
   background-image: linear-gradient(to right, #6779C7, #39A4B4);
@@ -158,11 +183,13 @@ body {
   text-transform: uppercase;
   -webkit-transition: all .2s;
   transition: all .2s; }
+  /* line 44, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
   .heading-secoundery:hover {
     -webkit-transform: skewX(15deg) skewY(2deg) scale(1.1);
             transform: skewX(15deg) skewY(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+/* line 49, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .about-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,22 +200,27 @@ body {
           flex-direction: column;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
+  /* line 53, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
   .about-heading:not(:last-child) {
     margin-bottom: 3rem; }
 
+/* line 60, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .about-heading-section-1 h2,
 .about-heading-section-2 h2 {
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: uppercase; }
 
+/* line 65, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .about-heading-section-1 p,
 .about-heading-section-2 p {
   font-size: 1.6rem;
   margin-bottom: 3.5rem; }
 
+/* line 70, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .tittle-card {
   margin-bottom: 7rem; }
+  /* line 73, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
   .tittle-card .card-heading {
     background-image: -webkit-gradient(linear, left top, right top, from(#6779C7), to(#39A4B4));
     background-image: linear-gradient(to right, #6779C7, #39A4B4);
@@ -201,11 +233,13 @@ body {
     text-transform: uppercase;
     -webkit-transition: all .2s;
     transition: all .2s; }
+    /* line 83, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
     .tittle-card .card-heading:hover {
       -webkit-transform: skewX(15deg) skewY(2deg) scale(1.1);
               transform: skewX(15deg) skewY(2deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+/* line 89, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .story-section__heading {
   background-image: -webkit-gradient(linear, left top, right top, from(#6779C7), to(#39A4B4));
   background-image: linear-gradient(to right, #6779C7, #39A4B4);
@@ -219,11 +253,13 @@ body {
   margin-top: 10rem;
   -webkit-transition: all .2s;
   transition: all .2s; }
+  /* line 100, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
   .story-section__heading:hover {
     -webkit-transform: skewX(15deg) skewY(2deg) scale(1.1);
             transform: skewX(15deg) skewY(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+/* line 105, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
 .contact__img__heading {
   background-image: -webkit-gradient(linear, left top, right top, from(#6779C7), to(#39A4B4));
   background-image: linear-gradient(to right, #6779C7, #39A4B4);
@@ -237,33 +273,173 @@ body {
   margin: 5rem 0 0 6rem;
   -webkit-transition: all .2s;
   transition: all .2s; }
+  /* line 116, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
   .contact__img__heading:hover {
     -webkit-transform: skewX(15deg) skewY(2deg) scale(1.1);
             transform: skewX(15deg) skewY(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+/* line 121, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
+.bookingHead {
+  background-image: -webkit-gradient(linear, left top, right top, from(#39A4B4), to(#6779C7));
+  background-image: linear-gradient(to right, #39A4B4, #6779C7);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+  /* line 131, Users/sherif/Portfolio/Natrous/style/sass/base/_typegraphy.scss */
+  .bookingHead:hover {
+    -webkit-transform: skewX(15deg) skewY(2deg) scale(1.1);
+            transform: skewX(15deg) skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/base/_utilities.scss */
 .u-center-text {
   text-align: center; }
 
+/* line 4, Users/sherif/Portfolio/Natrous/style/sass/base/_utilities.scss */
 .u-margin-small {
   margin-bottom: 1.5rem; }
 
+/* line 7, Users/sherif/Portfolio/Natrous/style/sass/base/_utilities.scss */
+.u-margin-small-2 {
+  margin-bottom: 2 rem; }
+
+/* line 10, Users/sherif/Portfolio/Natrous/style/sass/base/_utilities.scss */
 .u-margin-medium {
   margin-bottom: 5rem; }
 
+/* line 13, Users/sherif/Portfolio/Natrous/style/sass/base/_utilities.scss */
 .u-margin-big {
   margin-bottom: 8rem; }
 
+/* line 16, Users/sherif/Portfolio/Natrous/style/sass/base/_utilities.scss */
 .u-margin-big-top {
   margin-top: 8rem; }
 
+/* line 19, Users/sherif/Portfolio/Natrous/style/sass/base/_utilities.scss */
 .u-margin-huge {
   margin-bottom: 10em; }
 
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4000;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -wibkit-backdrop-filter: blur(10px); }
+  @supports (-wibkit-backdrop-filter: blur(10px)) or ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+    /* line 1, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+    .popup {
+      -wibkit-backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+              backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
+  /* line 20, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  /* line 25, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+  .popup:target .popup__contant {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1); }
+  /* line 31, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+  .popup__close:link, .popup__close:visited {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #6779C7;
+    display: inline-block;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    line-height: 1; }
+  /* line 43, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+  .popup__close:hover {
+    color: #333; }
+  /* line 48, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+  .popup__contant {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 75%;
+    height: 65%;
+    background-color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.3);
+            box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+    -webkit-transition: all .4s .2s;
+    transition: all .4s .2s; }
+  /* line 61, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+  .popup__leftSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%; }
+    /* line 65, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+    .popup__leftSide img {
+      width: 100%;
+      height: 50%; }
+  /* line 71, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+  .popup__rightSide {
+    -ms-flex-preferred-size: 66%;
+        flex-basis: 66%;
+    padding: 3rem 5rem;
+    display: table-cell;
+    font-size: 1.4rem;
+    vertical-align: middle; }
+    /* line 77, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+    .popup__rightSide p {
+      margin-bottom: 4rem;
+      -webkit-column-count: 2;
+              column-count: 2;
+      -webkit-column-gap: 4rem;
+              column-gap: 4rem;
+      -webkit-column-rule: 1px solid #333;
+              column-rule: 1px solid #333;
+      -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+              hyphens: auto; }
+    /* line 84, Users/sherif/Portfolio/Natrous/style/sass/components/_popup.scss */
+    .popup__rightSide h3 {
+      margin-bottom: 2rem; }
+
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
 .composition {
   position: relative;
   top: 12%;
   left: 36%; }
+  /* line 7, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
   .composition__photo {
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
             box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -272,15 +448,19 @@ body {
     outline-offset: 2rem;
     -webkit-transition: all .3s;
     transition: all .3s; }
+    /* line 13, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
     .composition__photo--p1 {
       left: -19rem;
       top: -3rem; }
+    /* line 17, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
     .composition__photo--p2 {
       right: -35rem;
       top: 2rem; }
+    /* line 21, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
     .composition__photo--p3 {
       left: -7rem;
       top: 11rem; }
+    /* line 25, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
     .composition__photo:hover {
       outline: 1.5rem solid #564B91;
       -webkit-transform: scale(1.05) translateY(-0.5rem);
@@ -288,10 +468,16 @@ body {
       -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
               box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 2; }
+  @media only screen and (max-width: 56em) {
+    /* line 34, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
+    .composition__photo {
+      display: none; } }
+  /* line 39, Users/sherif/Portfolio/Natrous/style/sass/components/_composition.scss */
   .composition:hover .composition__photo:not(:hover) {
     -webkit-transform: scale(0.9);
             transform: scale(0.9); }
 
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .btn {
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -309,6 +495,7 @@ body {
           animation-fill-mode: backwards;
   position: relative;
   font-size: 1.6rem; }
+  /* line 15, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .btn:hover {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
@@ -316,12 +503,14 @@ body {
     color: #FFFFFF;
     -webkit-box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.3); }
+  /* line 21, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .btn:active {
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
     -webkit-box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3); }
 
+/* line 27, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .about-learnMore-btn:link, .about-learnMore-btn:visited {
   color: #564B91;
   font-size: 1.6rem;
@@ -340,9 +529,11 @@ body {
   text-transform: uppercase;
   -webkit-transition: all .4s;
   transition: all .4s; }
+  /* line 41, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .about-learnMore-btn:link .arrow-btn, .about-learnMore-btn:visited .arrow-btn {
     margin-left: 0.5rem; }
 
+/* line 45, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .about-learnMore-btn:hover {
   -webkit-transform: translateY(0.5rem);
           transform: translateY(0.5rem);
@@ -352,12 +543,14 @@ body {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
+/* line 52, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .about-learnMore-btn:active {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(0);
           transform: translateY(0); }
 
+/* line 58, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .section-card-box__card-1__card-1-rear__card-section__btn {
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -369,16 +562,19 @@ body {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   font-size: 1.6rem; }
+  /* line 68, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .section-card-box__card-1__card-1-rear__card-section__btn:hover {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FFb900), to(#FF7730));
     background-image: linear-gradient(to right bottom, #FFb900, #FF7730);
     color: #FFFFFF;
     -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+  /* line 73, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .section-card-box__card-1__card-1-rear__card-section__btn:active {
     -webkit-box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3); }
 
+/* line 79, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .section-card-box__card-2__card-2-rear__card-section__btn {
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -390,16 +586,19 @@ body {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   font-size: 1.6rem; }
+  /* line 89, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .section-card-box__card-2__card-2-rear__card-section__btn:hover {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#2998FF), to(#5643fa));
     background-image: linear-gradient(to right bottom, #2998FF, #5643fa);
     color: #FFFFFF;
     -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+  /* line 94, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .section-card-box__card-2__card-2-rear__card-section__btn:active {
     -webkit-box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3); }
 
+/* line 100, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .section-card-box__card-3__card-3-rear__card-section__btn {
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -411,19 +610,23 @@ body {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   font-size: 1.6rem; }
+  /* line 110, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .section-card-box__card-3__card-3-rear__card-section__btn:hover {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#ce1212));
     background-image: linear-gradient(to right bottom, #ff0000, #ce1212);
     color: #FFFFFF;
     -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+  /* line 115, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .section-card-box__card-3__card-3-rear__card-section__btn:active {
     -webkit-box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3); }
 
+/* line 120, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .discover-all {
   text-align: center;
   margin-top: 8rem; }
+  /* line 123, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .discover-all__btn {
     text-transform: uppercase;
     background-color: #FFFFFF;
@@ -435,21 +638,25 @@ body {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     font-size: 1.6rem; }
+    /* line 133, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
     .discover-all__btn:hover {
       background-image: -webkit-gradient(linear, left top, right bottom, from(#FFb900), color-stop(#2998FF), to(#ff0000));
       background-image: linear-gradient(to right bottom, #FFb900, #2998FF, #ff0000);
       color: #FFFFFF;
       -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
               box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+    /* line 138, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
     .discover-all__btn:active {
       -webkit-box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
               box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3); }
 
+/* line 143, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .story-btn {
   margin: 0 auto;
   width: 19%;
   -webkit-transform: translateY(7rem);
           transform: translateY(7rem); }
+  /* line 148, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .story-btn__btn-allStories:link, .story-btn__btn-allStories:visited {
     color: #564B91;
     font-size: 1.6rem;
@@ -468,8 +675,10 @@ body {
     text-transform: uppercase;
     -webkit-transition: all .4s;
     transition: all .4s; }
+    /* line 162, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
     .story-btn__btn-allStories:link .arrow-btn, .story-btn__btn-allStories:visited .arrow-btn {
       margin-left: 0.5rem; }
+  /* line 166, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .story-btn__btn-allStories:hover {
     -webkit-transform: translateY(0.5rem);
             transform: translateY(0.5rem);
@@ -478,12 +687,14 @@ body {
     -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     border-radius: 5px; }
+  /* line 173, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .story-btn__btn-allStories:active {
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     -webkit-transform: translateY(0);
             transform: translateY(0); }
 
+/* line 179, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
 .btn-form {
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -498,6 +709,7 @@ body {
   transition: all .3s ease-in-out;
   position: relative;
   font-size: 1.3rem; }
+  /* line 192, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .btn-form:hover {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
@@ -505,12 +717,47 @@ body {
     color: #FFFFFF;
     -webkit-box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.3); }
+  /* line 198, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
   .btn-form:active, .btn-form:focus {
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
     -webkit-box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3); }
 
+/* line 204, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
+.btn-booking {
+  text-transform: uppercase;
+  background-color: #564B91;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 4.5rem;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  font-weight: bold;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-animation: 1.5s btnMoveBottom ease-in-out;
+          animation: 1.5s btnMoveBottom ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  position: relative;
+  font-size: 1.6rem; }
+  /* line 218, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
+  .btn-booking:hover {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    background-color: #FFFFFF;
+    color: #564B91;
+    -webkit-box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 2rem rgba(0, 0, 0, 0.3); }
+  /* line 224, Users/sherif/Portfolio/Natrous/style/sass/components/_btn.scss */
+  .btn-booking:active {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3); }
+
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/components/_featur-box.scss */
 .featur-box {
   font-size: 1.5rem;
   text-align: center;
@@ -520,6 +767,7 @@ body {
   padding: 0 10%;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  /* line 7, Users/sherif/Portfolio/Natrous/style/sass/components/_featur-box.scss */
   .featur-box__box {
     background-color: rgba(247, 247, 247, 0.8);
     margin: 0 1rem;
@@ -531,11 +779,13 @@ body {
     transition: transform .4s, -webkit-transform .4s;
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    /* line 14, Users/sherif/Portfolio/Natrous/style/sass/components/_featur-box.scss */
     .featur-box__box:hover {
       -webkit-transform: translateY(-1.5rem) scale(1.1);
               transform: translateY(-1.5rem) scale(1.1);
       -webkit-box-shadow: 1rem 2.5rem 5rem rgba(0, 0, 0, 0.25);
               box-shadow: 1rem 2.5rem 5rem rgba(0, 0, 0, 0.25); }
+  /* line 19, Users/sherif/Portfolio/Natrous/style/sass/components/_featur-box.scss */
   .featur-box__icon {
     font-size: 6rem;
     display: inline-block;
@@ -543,22 +793,26 @@ body {
     background-image: linear-gradient(to right, #6779C7, #39A4B4);
     -webkit-background-clip: text;
     color: transparent; }
+  /* line 26, Users/sherif/Portfolio/Natrous/style/sass/components/_featur-box.scss */
   .featur-box:hover .featur-box__box:not(:hover) {
     -webkit-transform: scale(0.9);
             transform: scale(0.9); }
 
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
 .section-card-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  /* line 5, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
   .section-card-box__card-1 {
     width: 30%;
     -webkit-perspective: 150rem;
             perspective: 150rem;
     -moz-prespective: 150rem;
     position: relative; }
+    /* line 11, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-1__card-1-front {
       background-color: #FFFFFF;
       width: 34.6rem;
@@ -569,6 +823,7 @@ body {
               box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       position: absolute;
       top: 0; }
+      /* line 19, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-1__card-1-front__pic-1 {
         width: 100%;
         height: 23rem;
@@ -578,10 +833,12 @@ body {
         background-size: cover;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+      /* line 27, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-1__card-1-front__heading-1 {
         position: absolute;
         top: 16rem;
         right: 0; }
+        /* line 31, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-1__card-1-front__heading-1 h4 {
           font-size: 2.8rem;
           font-weight: bold;
@@ -590,16 +847,20 @@ body {
           background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.75)), to(rgba(255, 119, 48, 0.75)));
           background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.75), rgba(255, 119, 48, 0.75));
           padding: 0 1rem; }
+      /* line 41, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-1__card-1-front__details-1 ul {
         list-style: none;
         margin-top: 1.5rem; }
+        /* line 44, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-1__card-1-front__details-1 ul li {
           font-size: 1.5rem;
           width: 80%;
           margin: 0 auto;
           padding: 1rem 0; }
+          /* line 49, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-1__card-1-front__details-1 ul li:not(:last-child) {
             border-bottom: 2px solid #eee; }
+    /* line 56, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-1__card-1-rear {
       height: 50rem;
       width: 34.6rem;
@@ -613,33 +874,41 @@ body {
               box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       background-image: -webkit-gradient(linear, left top, right bottom, from(#FFb900), to(#FF7730));
       background-image: linear-gradient(to right bottom, #FFb900, #FF7730); }
+      /* line 64, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-1__card-1-rear__card-section {
         position: absolute;
         top: 5%;
         left: 50%;
         -webkit-transform: translate(-50%, 50%);
                 transform: translate(-50%, 50%); }
+        /* line 69, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-1__card-1-rear__card-section__price {
           margin-bottom: 8rem;
           color: #FFFFFF; }
+          /* line 72, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-1__card-1-rear__card-section__price__only {
             font-size: 1.4rem;
             text-transform: uppercase; }
+          /* line 76, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-1__card-1-rear__card-section__price__value {
             font-size: 6rem;
             font-weight: 100; }
+    /* line 83, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-1:hover .section-card-box__card-1__card-1-front {
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg); }
+    /* line 86, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-1:hover .section-card-box__card-1__card-1-rear {
       -webkit-transform: rotateY(0);
               transform: rotateY(0); }
+  /* line 91, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
   .section-card-box__card-2 {
     width: 30%;
     -webkit-perspective: 150rem;
             perspective: 150rem;
     position: relative;
     -moz-prespective: 150rem; }
+    /* line 97, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-2__card-2-front {
       background-color: #FFFFFF;
       width: 34.6rem;
@@ -650,6 +919,7 @@ body {
               box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       position: absolute;
       top: 0; }
+      /* line 105, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-2__card-2-front__pic-2 {
         width: 100%;
         height: 23rem;
@@ -659,10 +929,12 @@ body {
         background-size: cover;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+      /* line 113, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-2__card-2-front__heading-2 {
         position: absolute;
         top: 16rem;
         right: 0; }
+        /* line 117, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-2__card-2-front__heading-2 h4 {
           font-size: 2.8rem;
           font-weight: bold;
@@ -671,16 +943,20 @@ body {
           background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.75)), to(rgba(86, 67, 250, 0.75)));
           background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.75), rgba(86, 67, 250, 0.75));
           padding: 0 1rem; }
+      /* line 127, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-2__card-2-front__details-2 ul {
         list-style: none;
         margin-top: 1.5rem; }
+        /* line 130, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-2__card-2-front__details-2 ul li {
           font-size: 1.5rem;
           width: 80%;
           margin: 0 auto;
           padding: 1rem 0; }
+          /* line 135, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-2__card-2-front__details-2 ul li:not(:last-child) {
             border-bottom: 2px solid #eee; }
+    /* line 142, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-2__card-2-rear {
       height: 50rem;
       width: 34.6rem;
@@ -694,33 +970,41 @@ body {
               box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       background-image: -webkit-gradient(linear, left top, right bottom, from(#2998FF), to(#5643fa));
       background-image: linear-gradient(to right bottom, #2998FF, #5643fa); }
+      /* line 150, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-2__card-2-rear__card-section {
         position: absolute;
         top: 5%;
         left: 50%;
         -webkit-transform: translate(-50%, 50%);
                 transform: translate(-50%, 50%); }
+        /* line 155, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-2__card-2-rear__card-section__price {
           margin-bottom: 8rem;
           color: #FFFFFF; }
+          /* line 158, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-2__card-2-rear__card-section__price__only {
             font-size: 1.4rem;
             text-transform: uppercase; }
+          /* line 162, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-2__card-2-rear__card-section__price__value {
             font-size: 6rem;
             font-weight: 100; }
+    /* line 169, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-2:hover .section-card-box__card-2__card-2-front {
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg); }
+    /* line 172, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-2:hover .section-card-box__card-2__card-2-rear {
       -webkit-transform: rotateY(0);
               transform: rotateY(0); }
+  /* line 177, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
   .section-card-box__card-3 {
     width: 30%;
     -webkit-perspective: 150rem;
             perspective: 150rem;
     position: relative;
     -moz-prespective: 150rem; }
+    /* line 183, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-3__card-3-front {
       background-color: #FFFFFF;
       width: 34.6rem;
@@ -731,6 +1015,7 @@ body {
               box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       position: absolute;
       top: 0rem; }
+      /* line 191, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-3__card-3-front__pic-3 {
         width: 100%;
         height: 23rem;
@@ -740,10 +1025,12 @@ body {
         background-size: cover;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+      /* line 199, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-3__card-3-front__heading-3 {
         position: absolute;
         top: 16rem;
         right: 0; }
+        /* line 203, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-3__card-3-front__heading-3 h4 {
           font-size: 2.5rem;
           font-weight: bold;
@@ -752,16 +1039,20 @@ body {
           background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 0, 0, 0.75)), to(rgba(206, 18, 18, 0.75)));
           background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.75), rgba(206, 18, 18, 0.75));
           padding: 0 1rem; }
+      /* line 213, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-3__card-3-front__details-3 ul {
         list-style: none;
         margin-top: 1.5rem; }
+        /* line 216, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-3__card-3-front__details-3 ul li {
           font-size: 1.5rem;
           width: 80%;
           margin: 0 auto;
           padding: 1rem 0; }
+          /* line 221, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-3__card-3-front__details-3 ul li:not(:last-child) {
             border-bottom: 2px solid #eee; }
+    /* line 228, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-3__card-3-rear {
       height: 50rem;
       width: 34.6rem;
@@ -775,28 +1066,35 @@ body {
               box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#ce1212));
       background-image: linear-gradient(to right bottom, #ff0000, #ce1212); }
+      /* line 236, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
       .section-card-box__card-3__card-3-rear__card-section {
         position: absolute;
         top: 5%;
         left: 50%;
         -webkit-transform: translate(-50%, 50%);
                 transform: translate(-50%, 50%); }
+        /* line 241, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
         .section-card-box__card-3__card-3-rear__card-section__price {
           margin-bottom: 8rem;
           color: #FFFFFF; }
+          /* line 244, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-3__card-3-rear__card-section__price__only {
             font-size: 1.4rem;
             text-transform: uppercase; }
+          /* line 248, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
           .section-card-box__card-3__card-3-rear__card-section__price__value {
             font-size: 6rem;
             font-weight: 100; }
+    /* line 255, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-3:hover .section-card-box__card-3__card-3-front {
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg); }
+    /* line 258, Users/sherif/Portfolio/Natrous/style/sass/components/_card.scss */
     .section-card-box__card-3:hover .section-card-box__card-3__card-3-rear {
       -webkit-transform: rotateY(0);
               transform: rotateY(0); }
 
+/* line 3, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
 .story-section__story {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,6 +1106,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 80vh; }
+  /* line 9, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
   .story-section__story__story-1 {
     width: 75%;
     margin: 0 auto;
@@ -828,9 +1127,11 @@ body {
             align-items: center;
     -webkit-transform: skewX(-12deg);
             transform: skewX(-12deg); }
+    /* line 22, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
     .story-section__story__story-1 > * {
       -webkit-transform: skewX(12deg);
               transform: skewX(12deg); }
+    /* line 26, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
     .story-section__story__story-1__pic-1 {
       width: 15rem;
       height: 15rem;
@@ -839,6 +1140,7 @@ body {
               clip-path: circle(50% at 50% 50%);
       -ms-flex-preferred-size: 34%;
           flex-basis: 34%; }
+      /* line 33, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
       .story-section__story__story-1__pic-1 figure figcaption {
         color: #FFFFFF;
         position: absolute;
@@ -847,14 +1149,17 @@ body {
         text-transform: uppercase;
         font-size: 1.9rem;
         text-align: center; }
+      /* line 43, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
       .story-section__story__story-1__pic-1 img {
         width: 100%;
         -webkit-transform: scale(1.4);
                 transform: scale(1.4); }
+    /* line 48, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
     .story-section__story__story-1__text-1 {
       padding: 3rem;
       -ms-flex-preferred-size: 68%;
           flex-basis: 68%; }
+  /* line 53, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
   .story-section__story__story-2 {
     width: 75%;
     margin: 0 auto;
@@ -875,9 +1180,11 @@ body {
             align-items: center;
     -webkit-transform: skewX(-12deg);
             transform: skewX(-12deg); }
+    /* line 66, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
     .story-section__story__story-2 > * {
       -webkit-transform: skewX(12deg);
               transform: skewX(12deg); }
+    /* line 70, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
     .story-section__story__story-2__pic-2 {
       width: 15rem;
       height: 15rem;
@@ -886,17 +1193,21 @@ body {
               clip-path: circle(50% at 50% 50%);
       -ms-flex-preferred-size: 34%;
           flex-basis: 34%; }
+      /* line 76, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
       .story-section__story__story-2__pic-2 img {
         width: 100%;
         -webkit-transform: scale(1.4);
                 transform: scale(1.4); }
+    /* line 81, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
     .story-section__story__story-2__text-2 {
       padding: 3rem;
       -ms-flex-preferred-size: 68%;
           flex-basis: 68%; }
+      /* line 84, Users/sherif/Portfolio/Natrous/style/sass/components/_story.scss */
       .story-section__story__story-2__text-2 h3 {
         margin-top: 0; }
 
+/* line 2, Users/sherif/Portfolio/Natrous/style/sass/components/_pg-video.scss */
 .story-section__video {
   width: 100%;
   height: 140vh;
@@ -908,6 +1219,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover; }
 
+/* line 4, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
 .contact__img__form__input {
   font-family: inherit;
   font-size: 1.7rem;
@@ -922,21 +1234,27 @@ body {
   transition: all .2s ease;
   border-bottom: 3px solid transparent;
   display: block; }
+  /* line 17, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
   .contact__img__form__input:focus {
     -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #39A4B4; }
+  /* line 21, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
   .contact__img__form__input:focus:invalid {
     border-bottom: 3px solid #FFb900; }
+  /* line 24, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
   .contact__img__form__input::webkit-input-placeholder {
     color: #999; }
+  /* line 27, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
   .contact__img__form__input::input-placeholder {
     color: #564B91; }
 
+/* line 31, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
 .contact__img__form__input:placeholder-shown + .contact__img__form__label {
   visibility: hidden;
   opacity: 0; }
 
+/* line 35, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
 .contact__img__form__label {
   font-size: 1.6rem;
   font-weight: 700;
@@ -945,10 +1263,12 @@ body {
   -webkit-transition: all .3s esae;
   transition: all .3s esae; }
 
+/* line 42, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
 .contact__img__form__radio-group {
   margin-left: 2%;
   display: inline-block; }
 
+/* line 47, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
 .contact__img__form__radio-label {
   font-size: 1.6rem;
   margin-left: 0.5rem;
@@ -957,6 +1277,7 @@ body {
   cursor: pointer;
   position: relative; }
 
+/* line 55, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
 .contact__img__form__radio-button {
   width: 3rem;
   height: 3rem;
@@ -966,6 +1287,7 @@ body {
   position: absolute;
   left: 0;
   top: -.7rem; }
+  /* line 64, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
   .contact__img__form__radio-button::after {
     content: "";
     width: 1.2rem;
@@ -982,14 +1304,17 @@ body {
     -webkit-transition: opacity .2s;
     transition: opacity .2s; }
 
+/* line 79, Users/sherif/Portfolio/Natrous/style/sass/components/_form.scss */
 .contact__img__form__radio-input:checked + .contact__img__form__radio-label .contact__img__form__radio-button::after {
   opacity: 1; }
 
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .about-section {
   background-color: #F7F7F7;
   padding: 24rem 0rem;
   margin-top: -20vh; }
 
+/* line 6, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .aboute-contents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1000,12 +1325,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+/* line 12, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .about-heading-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%; }
 
+/* line 16, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .featur-section {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(57, 164, 180, 0.8)), to(rgba(103, 121, 199, 0.8))), url(../../img/nat-4.jpg);
   background-image: linear-gradient(to right bottom, rgba(57, 164, 180, 0.8), rgba(103, 121, 199, 0.8)), url(../../img/nat-4.jpg);
@@ -1014,10 +1341,12 @@ body {
   margin-top: -10rem;
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg); }
+  /* line 22, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
   .featur-section > * {
     -webkit-transform: skewY(6deg);
             transform: skewY(6deg); }
 
+/* line 26, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .section-card {
   background-color: #F7F7F7;
   height: 125vh;
@@ -1025,16 +1354,19 @@ body {
   text-align: center;
   margin-top: -8rem; }
 
+/* line 33, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .story-section {
   padding: 0 10%;
   position: relative; }
 
+/* line 37, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .contact {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(57, 164, 180, 0.8)), to(rgba(103, 121, 199, 0.8)));
   background-image: linear-gradient(to right bottom, rgba(57, 164, 180, 0.8), rgba(103, 121, 199, 0.8));
   height: 98vh;
   padding: 15rem;
   margin-top: 18.5rem; }
+  /* line 42, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
   .contact__img {
     background-image: linear-gradient(106deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/nat-10.jpg);
     background-size: cover;
@@ -1044,12 +1376,154 @@ body {
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
 
+/* line 51, Users/sherif/Portfolio/Natrous/style/sass/pages/_home.scss */
 .footer {
   background-color: #333;
   height: 70vh;
   padding: 5% 10% 0 10%;
   font-size: 1.4rem; }
 
+/* line 2, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__checkbox {
+  display: none; }
+
+/* line 6, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__button {
+  background-color: #FFFFFF;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+/* line 20, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#39A4B4, #6779C7);
+  z-index: 1000;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+/* line 32, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+/* line 43, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+/* line 53, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__item {
+  margin: 2rem; }
+
+/* line 58, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFFFFF 50%);
+  background-size: 226%;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
+
+/* line 72, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #564B91;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem); }
+
+/* line 81, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(80);
+          transform: scale(80); }
+
+/* line 85, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+/* line 92, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  /* line 96, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block; }
+  /* line 105, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+  /* line 113, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+  .navigation__icon::before {
+    top: -.8rem; }
+  /* line 114, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+  .navigation__icon::after {
+    top: .8rem; }
+
+/* line 117, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+/* line 121, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+/* line 125, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+/* line 129, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg); }
+
+/* line 134, Users/sherif/Portfolio/Natrous/style/sass/layout/_nav.scss */
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg); }
+
+/* line 1, Users/sherif/Portfolio/Natrous/style/sass/layout/_header.scss */
 .hero {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(57, 164, 180, 0.8)), to(rgba(103, 121, 199, 0.8))), url(../../img/hero-small.jpg);
@@ -1059,26 +1533,32 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  /* line 8, Users/sherif/Portfolio/Natrous/style/sass/layout/_header.scss */
   .hero .logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
+    /* line 12, Users/sherif/Portfolio/Natrous/style/sass/layout/_header.scss */
     .hero .logo-box img {
       width: 125px;
       -webkit-animation: 1.3s logo ease-in-out;
               animation: 1.3s logo ease-in-out; }
 
+/* line 3, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
 .footer__logo {
   margin: auto;
   width: 19.8rem; }
+  /* line 6, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
   .footer__logo img {
     width: 20rem;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
     opacity: .4; }
+  /* line 11, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
   .footer__logo:hover img {
     opacity: 5; }
 
+/* line 15, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1087,9 +1567,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 5rem; }
+  /* line 19, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
   .footer__content__navigation {
     -ms-flex-preferred-size: 44%;
         flex-basis: 44%; }
+    /* line 22, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
     .footer__content__navigation__list {
       border-top: 1px solid #515151;
       display: -webkit-box;
@@ -1099,10 +1581,12 @@ body {
           -ms-flex-pack: justify;
               justify-content: space-between;
       list-style: none; }
+      /* line 28, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
       .footer__content__navigation__list__items {
         margin-top: 1.7rem;
         -webkit-transition: all .3s;
         transition: all .3s; }
+    /* line 34, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
     .footer__content__navigation__link:link, .footer__content__navigation__link:visited {
       color: #F7F7F7;
       text-decoration: none;
@@ -1111,6 +1595,7 @@ body {
       transition: all .2s linear;
       display: inline-block;
       padding: 3px 4px 0 4px; }
+    /* line 43, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
     .footer__content__navigation__link:hover {
       background-color: #000000;
       color: #777;
@@ -1119,6 +1604,7 @@ body {
       -webkit-transform: rotate(5deg) scale(1.3);
               transform: rotate(5deg) scale(1.3);
       border-radius: 5px; }
+  /* line 52, Users/sherif/Portfolio/Natrous/style/sass/layout/_footer.scss */
   .footer__content__copyright {
     color: #999;
     border-top: 1px solid #515151;
